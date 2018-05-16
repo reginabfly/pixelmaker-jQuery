@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("images/pexels-photo-289649.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
+    border: 0.188em solid black;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 4.375em;
+    margin: 0.2em;
+    background-color: black;
+    color: #5ea5d9;
+}
+
+h2 {
+    margin: 1em 0 1em;
+    padding: 0.250em;
+    font-weight: 900;
+    background-color: #595c5c;
+    color: white;
+    border: 0.125em solid black;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 0.063em solid black;
+    background: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 1.250em;
+}
+
+td {
+    width: 1.250em;
+}
+
+input[type=number] {
+    width: 3em;
+    margin-left: 0.375em;
+    background-color: white;
+    color: #427398;
+}
+
+input[type=color] {
+    height: 3em;
+    width: 8em;
+}
+
+input[type=reset] {
+    height: 2em;
+    width: 10em;
+    cursor: pointer;
+}
+
+.buttons {
+    margin: 1em;
+    height: 2em;
+    width: 10em;
+    border: 0.063em solid #777777;
+    background: #5ea5d9;
+    border: 0.125em solid #427398;
+    color: white;
+    padding: 0.250em;
+    cursor: pointer;
+    -moz-border-radius: 0.250em;
+    -webkit-border-radius: 0.250em;
+}
+
+.buttons:hover {
+    background-color: #427398;
+}
+
+/*flexbox code*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 6.250em;
+}
+
+.gridChoices {
+    display: flex;
+}
+
+.chooseGridBlock {
+    flex: 1;
+    margin: 0.625em;
+    padding: 0.625em;
+    border: 0.125em solid black;
+    background-color: #c5a7d8;
+}
+
+.tips {
+    flex: 1;
+    margin: 0.625em;
+    padding: 0.625em;
+    border: 0.125em solid black;
+    background-color: #c4c1c1;
+}
+
+.chooseColorBlock {
+    flex: 1;
+    margin: 0.625em;
+    padding: 0.625em;
+    border: 0.125em solid black;
+    background-color: #878cc3;
+}
+
+.tipsGrid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.gridDisplay {
+    margin-top: 1.250em;
+}
+
+@media only screen and (max-width: 62.438em) {
+    .gridChoices {
+        flex-direction: column;
+        flex: 0 0 auto;
+    }
+
+    .chooseGridBlock {
+        flex-shrink: 1;
+    }
+
+    .tips {
+        flex-shrink: 1;
+    }
+
+
+    .chooseColorBlock {
+        flex-shrink: 1;
+    }
+}
+
+footer {
+    text-decoration: none;
+    background-color: black;
+    color: #5ea5d9;
+    letter-spacing: 0.125em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #5ea5d9;
+}

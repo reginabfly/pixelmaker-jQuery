@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Maker!</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+    <h1>Pixel Art Maker</h1>
+
+    <div class="gridChoices">
+        <div class="chooseGridBlock">
+            <h2>Step 1:<br> Choose Grid Size</h2>
+            <form id="sizePicker">
+                Grid Height:<input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:<input type="number" id="inputWidth" name="width" min="1" value="1">
+                <div>
+                    <input class="buttons" id="submit" type="submit" value="Create Grid"><br>
+                    <input class="buttons" id="reset" type="reset" value="Remove Entire Grid"><br>
+                </div>
+            </form>
+        </div>
+
+        <div class="tips">
+            <h2>Step 2:<br> Helpful Tips</h2>
+            <p> To add a color to a square, just click once.</p>
+            <hr>
+            <p> Hold down the left button and drag the mouse to color a large selection.</p>
+            <hr>
+            <p>Double click to remove color from one square.</p>
+        </div>
+
+        <div class="chooseColorBlock">
+            <h2>Step 3:<br> Pick A Color <br></h2>
+            <input type="color" id="colorPicker">
+            <div>
+                <input class="buttons" id="clearGrid" type="button" value="Clear Current Grid"><br>
+                <input class="buttons" id="save" type="button" value="Save Grid As PDF">
+            </div>
+        </div>
+    </div>
+
+    <!--Start Grid Below-->
+    <div class="tipsGrid">
+        <div class="gridDisplay">
+            <table id="pixelCanvas">
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p> Created by <a href="http://www.designsbyregina.com" target="_blank">Designs By Regina</a> </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="designs.js"></script>
+
+</body>
+
+</html>
